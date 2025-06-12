@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unicorn Seed Partners - Micro Seed Fund</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #e1e1e1;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #121212;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            color: #a0a0a0;
+            margin-bottom: 30px;
+        }
+
+        .cta-section {
+            background: #1e1e1e;
+            padding: 40px;
+            border-radius: 10px;
+            margin: 40px 0;
+            text-align: center;
+            border: 1px solid #2d2d2d;
+        }
+
+        .portfolio-section {
+            margin: 60px 0;
+        }
+
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .portfolio-item {
+            background: #232a34;
+            padding: 24px 20px 20px 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 24px rgba(61, 139, 253, 0.08), 0 1.5px 6px rgba(0,0,0,0.12);
+            transition: transform 0.18s cubic-bezier(.4,2,.6,1), box-shadow 0.18s cubic-bezier(.4,2,.6,1);
+            border: 1px solid #2d2d2d;
+            position: relative;
+        }
+        .portfolio-item:hover {
+            transform: translateY(-6px) scale(1.02);
+            box-shadow: 0 8px 32px rgba(61, 139, 253, 0.18), 0 3px 12px rgba(0,0,0,0.18);
+        }
+        .portfolio-item h3 {
+            color: #3d8bfd;
+            margin-bottom: 10px;
+            font-size: 1.25em;
+        }
+        .portfolio-item p {
+            color: #b0b0b0;
+            font-size: 1em;
+            margin-bottom: 6px;
+        }
+        @media (max-width: 600px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 18px;
+            }
+            .portfolio-item {
+                padding: 16px 10px 14px 10px;
+            }
+        }
+
+        .contact-section {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .contact-button {
+            display: inline-block;
+            background: #3d5afe;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin: 10px;
+            transition: all 0.3s ease;
+            border: none;
+        }
+
+        .contact-button:hover {
+            background: #536dfe;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(61, 90, 254, 0.3);
+        }
+
+        .category-title {
+            margin: 40px 0 20px;
+            color: #ffffff;
+            border-bottom: 2px solid #2d2d2d;
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding: 20px;
+            color: #a0a0a0;
+            border-top: 1px solid #2d2d2d;
+        }
+
+        .portfolio-item.inactive, .portfolio-item .status.inactive {
+            color: #b0b0b0 !important;
+        }
+        .portfolio-item.inactive a, .portfolio-item .status.inactive {
+            color: #b0b0b0 !important;
+        }
+        .company-link {
+            color: #3d8bfd;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+        .company-link:hover {
+            color: #5ea3ff;
+            text-decoration: underline;
+        }
+        .status.active {
+            color: #66ff99;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+        .status.inactive {
+            color: #b0b0b0;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-left: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Unicorn Seed Partners</h1>
+        <p class="subtitle">Investing in early-stage startups with $5K-$25K checks</p>
+    </header>
+
+    <section class="cta-section">
+        <h2>Built something cool? Let's chat!</h2>
+        <p>We're always looking for innovative startups to invest in.</p>
+        <div>
+            <a href="mailto:g@unicorn.games" class="contact-button">Contact Us</a>
+        </div>
+    </section>
+
+    <section class="portfolio-section">
+        <h2>Our Portfolio</h2>
+        
+        <h3 class="category-title">Finance</h3>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <img src="wefunder-logo.png" alt="Wefunder Logo" style="width:90px;height:auto;display:block;margin:0 auto 18px auto;border-radius:16px;box-shadow:0 4px 16px rgba(61,139,253,0.12);background:linear-gradient(135deg,#232a34 60%,#3d8bfd22 100%);padding:14px;">
+                <h3><a href="https://wefunder.com" target="_blank" class="company-link">WeFunder</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Crowdsourcing the angel investing<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+            <div class="portfolio-item">
+                <h3><a href="https://www.tribevest.com" target="_blank" class="company-link">Tribevest</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Tribevest is OS and banking platform for Investor Groups<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+            <div class="portfolio-item">
+                <h3><a href="https://getcrescent.com" target="_blank" class="company-link">Crescent App</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Complete banking and cash command center for businesses<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+            <div class="portfolio-item">
+                <h3><a href="https://moneco.app" target="_blank" class="company-link">Moneco</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Neobank targeting African migrant communities in Europe<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> Europe</p>
+            </div>
+            <div class="portfolio-item">
+                <h3><a href="https://karbonpay.com" target="_blank" class="company-link">Karbon Pay</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Enterprises of all sizes with seamless, multi-country payroll management<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+            <div class="portfolio-item inactive">
+                <h3><a href="https://stockcard.io" target="_blank" class="company-link">StockCard.io</a> <span class="status inactive">Inactive</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Stock research platform for individual investors<br>
+                <strong>Stage:</strong> Inactive; Pivoted as Charlie - AI custom GPT<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+        </div>
+
+        <h3 class="category-title">Entertainment</h3>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3><a href="https://watfordfc.com" target="_blank" class="company-link">Watford F.C.</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2024<br>
+                Championship football team<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> UK</p>
+            </div>
+            <div class="portfolio-item">
+                <h3><a href="https://tapwithus.com" target="_blank" class="company-link">Tap Systems</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2024<br>
+                Input technology - Tap wearable that replaces keyboard, mouse & controller<br>
+                <strong>Stage:</strong> Rebranding + Growth<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+            <div class="portfolio-item">
+                <h3><a href="https://overplay.com" target="_blank" class="company-link">Overplay</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2024<br>
+                Make any video into a game<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+            <div class="portfolio-item">
+                <h3><a href="https://rebuffreality.com" target="_blank" class="company-link">Rebuff Reality</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2024<br>
+                Next generation motion game console<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+            <div class="portfolio-item inactive">
+                <h3><a href="https://tivoros.com" target="_blank" class="company-link">HMK Innovations</a> <span class="status inactive">Inactive</span></h3>
+                <p><strong>Invested:</strong> 2024<br>
+                Rebranded to tivoros.com – Education game studio – educational platform to teach math with immersive video games<br>
+                <strong>Stage:</strong> Inactive<br>
+                <strong>Geography:</strong> Bulgaria</p>
+            </div>
+            <div class="portfolio-item inactive">
+                <h3><a href="https://multiscription.com" target="_blank" class="company-link">Multiscription</a> <span class="status inactive">Inactive</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                New way for players to unlock unique benefits in free-to-play games through a single in-game subscription across publishers<br>
+                <strong>Stage:</strong> Inactive<br>
+                <strong>Geography:</strong> Denmark</p>
+            </div>
+        </div>
+
+        <h3 class="category-title"> Media</h3>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3><a href="https://radintel.ai" target="_blank" class="company-link">RAD INTEL</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Adding EQ in marketing; emotional intelligence in brand engagement<br>
+                <strong>Stage:</strong> Rebranding + Growth<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+            <div class="portfolio-item">
+                <h3><a href="https://khal.com" target="_blank" class="company-link">Khal.com</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Social media for foodies – cooking profiles for professional chefs and enthusiasts<br>
+                <strong>Stage:</strong> Rebranding<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+        </div>
+
+        <h3 class="category-title">Hospitality</h3>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3><a href="https://rarashangrila.com" target="_blank" class="company-link">Rara Shangri-la</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Reimagining hospitality at Rara Lake resort<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> Nepal</p>
+            </div>
+        </div>
+
+        <h3 class="category-title">Marketplace</h3>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">
+                <h3><a href="https://nepalteacollective.com" target="_blank" class="company-link">Nepal Tea Collective</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Transparency in teas – organic high-quality teas direct from Nepal gardens<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> Nepal + USA</p>
+            </div>
+            <div class="portfolio-item">
+                <h3><a href="https://yummy-future.com" target="_blank" class="company-link">Yummy Future</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Building robotic workforces for the food & beverage industry<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+            <div class="portfolio-item">
+                <h3><a href="https://aptdeco.com" target="_blank" class="company-link">AptDeco</a> <span class="status active">Active</span></h3>
+                <p><strong>Invested:</strong> 2022<br>
+                Peer-to-peer managed marketplace dedicated for buying and selling quality used furniture<br>
+                <strong>Stage:</strong> Growth<br>
+                <strong>Geography:</strong> USA</p>
+            </div>
+            <div class="portfolio-item inactive">
+                <h3><a href="#" target="_blank" class="company-link">Humvie Auto Rental</a> <span class="status inactive">Inactive</span></h3>
+                <p><strong>Invested:</strong> 2021<br>
+                Vehicle rental in Pakistan<br>
+                <strong>Stage:</strong> Inactive<br>
+                <strong>Geography:</strong> Pakistan</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <h2>Want to invest with us?</h2>
+        <p>We're always open to connecting with fellow investors.</p>
+        <a href="mailto:g@unicorn.games" class="contact-button">Get in Touch</a>
+    </section>
+
+    <footer>
+        <p>Unicorn Seed Partners LLC</p>
+        <p>Contact: g@unicorn.games</p>
+    </footer>
+</body>
+</html> 
